@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comments Sentiment Analyzer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <div>
+        <h1 class="main-heading">Youtube Video Comments Sentiment Analyzer</h1>
+    </div>
+
+    <form action="/result" class="form-container" method="post">
+        <div class="form-group">
+            <h2 class="sub-heading">Enter the Youtube Video URL...</h2>
+            <input  class="form-control" name='video_url' id="video_url" style='border-radius:1.25rem;margin-top: 10px;
+                        margin-bottom: 10px;height: 70px;' placeholder='Please enter a valid URL'>
+            
+            <!-- Adding dropdown for selecting number of comments -->
+            <label for="num_comments"><h2 class="sub-heading">Select number of comments:</h2></label>
+            <select id="num_comments" name="num_comments" class="form-control" style="margin-bottom: 10px;">
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="400">400</option>
+                <option value="800">800</option>
+                <option value="800">1600</option>
+            </select>
+            <div class="button-container">
+                <button type="submit" class="analyze-button-first btn btn-primary" name="action" value="action1" >Analyze Comments</button>
+                <button type="submit" class="analyze-button-second btn btn-primary" name="action" value="action2" >Additional Info</button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

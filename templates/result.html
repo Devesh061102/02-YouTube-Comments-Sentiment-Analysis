@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Page</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+        }
+        .column {
+            flex: 1;
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 27%;
+        }
+        .comment {
+            margin-bottom: 10px;
+        }
+        .positive_comment {
+            color: green;
+        }
+        .negative_comment {
+            color: red;
+        }
+        .main-heading {
+            text-align: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            color: whitesmoke;
+            font-size: 44px;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-heading">Comments Sentiments</h1>
+    <div class="container">
+        <div class="column">
+            <h1>Positive Comments</h1>
+            <ul>
+                {% for comment in positive_comments %}
+                    <li class="positive_comment">{{ comment }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Neutral Comments</h1>
+            <ul>
+                {% for comment in neutral_comments %}
+                    <li class="neutral_comment">{{ comment }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div class="column">
+            <h1>Negative Comments</h1>
+            <ul>
+                {% for comment in negative_comments %}
+                    <li class="negative_comment">{{ comment }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Channel Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .info-item {
+            margin-bottom: 15px;
+        }
+
+        .info-item label {
+            font-weight: bold;
+            color: #555;
+        }
+
+        .info-item p {
+            margin: 5px 0;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Channel Information</h1>
+        <div class="info-item">
+            <label>Title:</label>
+            <p>{{ info['title'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Channel Title:</label>
+            <p>{{ info['channel_title'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Upload Date:</label>
+            <p>{{ info['upload_date'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Duration:</label>
+            <p>{{ info['duration'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>View Count:</label>
+            <p>{{ info['view_count'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Like Count:</label>
+            <p>{{ info['like_count'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Dislike Count:</label>
+            <p>{{ info['dislike_count'] }}</p>
+        </div>
+        <div class="info-item">
+            <label>Comment Count:</label>
+            <p>{{ info['comment_count'] }}</p>
+        </div>
+    </div>
+</body>
+</html>

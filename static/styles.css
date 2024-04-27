@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: url('back.png');
+    background-size: cover;
+    font-family: sans-serif;
+    background-attachment: fixed;
+    margin-top: 40px;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.main-heading {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: whitesmoke;
+    font-size: 44px;
+}
+
+.sub-heading {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: bisque;
+    font-size: 44px;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.form-group {
+    text-align: center;
+}
+
+.form-control {
+    border-radius: 1.25rem;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 70px;
+    width: 100%;
+}
+
+.analyze-button-first {
+    width: 280px;
+    font-size: 25px;
+    height: 62px;
+    border-radius: 2.25rem;
+    background-color: #3c4986; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.analyze-button-second {
+    width: 280px;
+    font-size: 25px;
+    height: 62px;
+    border-radius: 2.25rem;
+    background-color: #3c4986; 
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.analyze-button-first:hover {
+    background-color: #0f1d5e; 
+    color: white;
+}
+.analyze-button-second:hover {
+    background-color: #0f1d5e; 
+    color: white;
+}
+
+.analyze-button-first:active {
+    background-color: #0f1d5e;
+    transform: translateY(2px);
+}
+.analyze-button-second:active {
+    background-color: #0f1d5e;
+    transform: translateY(2px);
+}
+.button-container {
+    padding-top: 15px;
+    text-align: center;
+}
